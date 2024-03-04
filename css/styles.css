@@ -394,17 +394,19 @@ color: #404BBF;
 }
 /*========== footer ground ==========*/
 .social-media-box {
-    display: inline-block;
-    margin-left: 120px;
+    display: inline-block;    
 }
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 .ground {
     background: #2e2f42;
     padding: 100px 0;
 }
-
+.ground-logo-cont {
+    margin-right: 120px;
+}
 .ground-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
