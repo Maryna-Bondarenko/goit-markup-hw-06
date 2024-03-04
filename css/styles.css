@@ -444,8 +444,9 @@ color: #404BBF;
     color: #fff;
     margin-bottom: 16px;
 }
-.social-links-list {
-    display: flex;     
+.social-links-list-footer {
+    display: flex; 
+    gap: 16px;  
 }
 .social-links-list-item {
     width: 40px;
