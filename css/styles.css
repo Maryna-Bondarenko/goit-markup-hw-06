@@ -548,7 +548,7 @@ color: #404BBF;
     background-color: #404BBF;
 }
 
-/* Backdrop Form style */
+/*=====Backdrop Form style=====*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -568,9 +568,9 @@ color: #404BBF;
     visibility: visible;
     pointer-events: auto;
 }
-/* /Backdrop Form style */
+/*=====/Backdrop Form style=====*/
 
-/* Modal Form style */
+/*=====Modal Form=====*/
 .modal-window {
     position: absolute;
     top: 50%;
@@ -596,7 +596,6 @@ color: #404BBF;
     height: 24px;
     cursor: pointer;
     background-color: #e7e9fc;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -609,15 +608,14 @@ color: #404BBF;
     background-color: #404bbf;
 }
 
-.modal-close-button:hover > .modal-cls-btn-icon,
-.modal-close-button:focus > .modal-cls-btn-icon {
+.modal-close-button:hover > .modal-close-button-icon,
+.modal-close-button:focus > .modal-close-button-icon {
     fill: #ffffff;
 }
 
-.modal-cls-btn-icon {
+.modal-close-button-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /*=====Modal Form style=====*/
 
@@ -633,7 +631,7 @@ color: #404BBF;
     margin-bottom: 16px;
 }
 
-.callback-form-field-wrapper {
+.callback-form-field-wrap {
     margin-bottom: 8px;
 }
 
@@ -646,7 +644,7 @@ color: #404BBF;
     margin-bottom: 4px;
 }
 
-.callback-form-input-wrapper {
+.callback-form-input-wrap {
     position: relative;
 }
 
@@ -679,7 +677,7 @@ color: #404BBF;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.callback-form-taxterea-wrapper {
+.callback-form-textarea-wrap {
     margin-bottom: 16px;
 }
 
@@ -710,15 +708,14 @@ color: #404BBF;
     border-color: #4d5ae5;
 }
 
-.callback-form-checkbox-wrapper {
+.callback-form-checkbox-wrap {
     display: flex;
-    margin-bottom: 24px;
-   
+    margin-bottom: 24px;   
 }
 
 .callback-form-privacy-checkbox {
     width: 16px;
-        height: 16px;
+    height: 16px;
 }
 
 .callback-form-checkbox-label {
@@ -726,9 +723,7 @@ color: #404BBF;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;
-       
-        
+    color: #8e8f99; 
 }
 
 .callback-form-own-checkbox {
@@ -752,13 +747,11 @@ color: #404BBF;
     color: #4d5ae5;
 }
 
-
 .callback-form-privacy-checkbox:checked + .callback-form-checkbox-label .callback-form-own-checkbox {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
 }
-
 
 .callback-form-checkbox-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -767,24 +760,23 @@ color: #404BBF;
 .callback-form-send-button{
     display: block;
     border-radius: 4px;
-        padding: 16px 32px;
-        min-width: 169px;
-        height: 56px;
-        margin-bottom: 24px;
-        margin-right: auto;
-        margin-left: auto;
-        border: none;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-        background: #4d5ae5;
-
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        text-align: center;
-        color: #ffffff;
-        cursor: pointer;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
+    border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #4d5ae5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .callback-form-send-button:hover,
@@ -792,4 +784,4 @@ color: #404BBF;
     background-color: #404BBF;
     
 }
-/* /Callback Form style */
+/*===== /Callback Form style =====*/
