@@ -51,6 +51,16 @@ img {
     pointer-events: auto;
 }
 
+.backdrop-menu.is-open {
+    opacity: 0;
+    visibility: visible;
+}
+
+.backdrop.is-open {
+    opacity: 0;
+    visibility: visible;
+}
+
 .container {
    max-width: 320px; 
    padding: 0 16px;
@@ -839,8 +849,12 @@ box-shadow:
   }
   
 @media screen and (min-width: 1158px) {
+    .ground {
+        padding: 0;
+    }
     .footer-container {
-      padding-left: 15px;
+      padding: 100px 0;
+      max-width: 1158px;
       flex-wrap: nowrap;
       gap: 0;
     }
@@ -1114,78 +1128,74 @@ box-shadow:
     background-color: #404BBF;
     
 }
-
-@media screen and (max-width: 767px) {
+  
+@media only screen and (max-width: 767px) {
     .backdrop-menu {
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 999999999;
+      z-index: 99999999;
       width: 100%;
       height: 100%;
       opacity: 0;
       visibility: hidden;
       background-color: #ffffff;
-      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+  
     .modal-menu {
       position: relative;
+      padding-top: 72px;
+      padding-bottom: 40px;
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding-top: 72px;
-      padding-bottom: 40px;
     }
   
-  
-    .modal-menu-nav {
+    /* modal nav links */
+    .modal-nav-list {
       display: flex;
       flex-direction: column;
       gap: 40px;
     }
-    
-    .modal-menu-nav-item-link {
+  
+    .modal-nav-link {
       font-weight: 700;
       font-size: 36px;
       line-height: 1.11;
       letter-spacing: 0.02em;
       color: #2e2f42;
     }
-    
-    .modal-menu-nav-item:first-child>.modal-menu-nav-item-link {
+    .modal-nav-list-item:first-child > .modal-nav-link {
       color: #404bbf;
     }
-    .menu-address{
-      margin-bottom: 48px;
-    }
-    .modal-menu-contact {
+    /* modal contact list */
+    .modal-contact-list {
       display: flex;
       flex-direction: column;
       gap: 24px;
+      margin-bottom: 48px;
     }
-    
-    .modal-contact-data {
+    .modal-contact-link {
       font-weight: 500;
       font-size: 20px;
       line-height: 1.2;
       letter-spacing: 0.02em;
       color: #434455;
     }
-  
+    .modal-contact-list-item:first-child > .modal-contact-link {
+      color: #4d5ae5;
+    }
     .modal-social-media-list {
       display: flex;
       gap: 40px;
     }
-    .modal-menu-contact-item:first-child>.modal-contact-data {
-      color: #4d5ae5;
-    }
   }
-@media screen and (min-width: 768px) {
+  /* #endregion modal menu*/
+  @media screen and (min-width: 768px) {
     .modal-menu {
       display: none;
     }
   }
-
- 
